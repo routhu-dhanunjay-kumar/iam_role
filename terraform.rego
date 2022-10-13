@@ -3,10 +3,10 @@ package terraform.analysis
 import input as tfplan
 
 
-default IAM_enabled = true
+default Detach_Policy = false
 
-IAM_enabled = false  {
+Detach_Policy = true  {
     
    
-    input.resources[_].instances[_].attributes.is_enabled == false
+    input.resources[_].instances[_].attributes.force_detach_policies == false
 }
