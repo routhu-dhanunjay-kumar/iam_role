@@ -2,7 +2,7 @@ package terraform.analysis
 
 import input as tfplan
 
-
+default Detach_Policy = false
 
 Detach_Policy = true  {
     
