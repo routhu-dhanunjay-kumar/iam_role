@@ -6,5 +6,6 @@ default Detach_Policy = false
 
 Detach_Policy = true {
     
-    input.resources[_].instances[_].attributes.force_detach_policies == false
+    input.planned_values.root_module.resources[_].values.force_detach_policies == false
+
 }
